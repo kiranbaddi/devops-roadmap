@@ -7,7 +7,7 @@
 
 The motivation for this repository is create a generic Road Map for anyone aspiring to be a DevOps Engineer. While, I don't aim this repository to be exhaustive and one-stop shop for all things DevOps, I would like to see this more of a navigator for people aspiring to become DevOps Engineers. 
 
-  > Note: You do not have to know all the conecpts mentioned here but pay attention to the concepts marked as Essential.
+  > ⚠️ Don't be overwhelmed by the no of topics. If you're a beginner pay attention to Essentials and then learn advanced topics.
 
 
 
@@ -18,13 +18,10 @@ The motivation for this repository is create a generic Road Map for anyone aspir
 - [Road Map DevOps Engineer](#road-map-devops-engineer)
   - [Motivation:](#motivation)
   - [Linux [Essential]](#linux-essential)
+  - [Software Development Lifecycle (SDLC)](#software-development-lifecycle-sdlc)
   - [Version Control and Source Code Management [Essential]](#version-control-and-source-code-management-essential)
-  - [Networking](#networking)
-  - [Cloud Computing](#cloud-computing)
-    - [General Concepts](#general-concepts)
-    - [AWS](#aws)
-    - [Azure](#azure)
-    - [GCP](#gcp)
+  - [[Networking](./Networking.md]](#networkingnetworkingmd)
+  - [Cloud Computing](#cloud-computingcloudcomputingmd)
   - [Containers & Kubernetes](#containers--kubernetes)
   - [Continuous Integration & Continuous Deployment [CI-CD]](#continuous-integration--continuous-deployment-ci-cd)
   - [Continuous Testing](#continuous-testing)
@@ -56,28 +53,14 @@ The motivation for this repository is create a generic Road Map for anyone aspir
   - Text Manipulation: awk, cut, sed 
   - Network: ping, telnet, dig, curl, wget
 
+## Software Development Lifecycle (SDLC) 
+
 ## Version Control and Source Code Management [Essential]
 
-## Networking
-  - Client Server Architecture
-  - OSI Layers
-  - DNS
-  - TLS 
-  - Firewalls
+## [Networking](./Networking.md]
+
   
-## Cloud Computing
-
-### General Concepts
-- Networking
-- Storage
-- Identity and Authentication (IAM)
-
-### AWS
-
-### Azure
-
-### GCP
-
+## [Cloud Computing](CloudComputing.md)
 
 
 ## Containers & Kubernetes
