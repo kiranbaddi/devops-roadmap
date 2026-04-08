@@ -20,7 +20,7 @@ The motivation for this repository is create a generic Road Map for anyone aspir
   - [Linux [Essential]](#linux-essential)
   - [Software Development Lifecycle (SDLC)](#software-development-lifecycle-sdlc)
   - [Version Control and Source Code Management [Essential]](#version-control-and-source-code-management-essential)
-  - [[Networking](./Networking.md]](#networkingnetworkingmd)
+  - [Networking](#networkingnetworkingmd)
   - [Cloud Computing](#cloud-computingcloudcomputingmd)
   - [Containers & Kubernetes](#containers--kubernetes)
   - [Continuous Integration & Continuous Deployment [CI-CD]](#continuous-integration--continuous-deployment-ci-cd)
@@ -57,7 +57,7 @@ The motivation for this repository is create a generic Road Map for anyone aspir
 
 ## Version Control and Source Code Management [Essential]
 
-## [Networking](./Networking.md]
+## [Networking](./Networking.md)
 
   
 ## [Cloud Computing](./CloudComputing.md)
