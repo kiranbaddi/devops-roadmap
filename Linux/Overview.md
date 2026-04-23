@@ -19,35 +19,31 @@ Now to the technical part: As said above, Linux Operating System is the widely u
 
  - Debian: A very stable and reliable linux distribution that is popular on both personal computers and servers.
  - Ubuntu: A derivate of Debian with it's own touch. Slightly higher usage than Debian on personal computers and servers. It's maintained by Canonical
- - RHEL: A very popular distribution for Enterprise servers is RedHat Enterprise Linux. It is managed by the company [RedHat Inc](https://redhat.com). RHEL is a commercial offering (paid). The 
+ - RHEL: A very popular distribution for Enterprise servers is RedHat Enterprise Linux. It is managed by the company [RedHat Inc](https://redhat.com). RHEL is a commercial offering (paid). 
+
+ - Suse: SUSE Linux is another popular commercial choice for enterprises. It comes in 2 different licenses - open and commercial.
+
  - Alpine: A light weight distribution that is popular in Container instances. Alpine contains only bare minimum software packages to keep the contianer images small and secure.    
 
 
 
- ## The basics
-
- - Accessing the servers/VMs:
-
-When you want to "login" to a server running Linux Operating system (henceforth referred as Linux Machine), you use a SSH client such as putty, or Windows Terminal or any other tool. The authentication is generally done with the help of SSH Keys. Someone with admin rights have to copy your public key into the server and then you can do the password-less login. More on it later.
-
-- Navigating around the computer. You enter a command into the SSH-Client (henceforth called as terminal for simplicity) and the command is sent to the linux machine and output displayed on the terminal. For instance let's assume we are connected to the linux machine called as web-server-01. Now, let's run our first command
-`whoami` and hit enter. The output will be the name of the user with which you logged into the machine. 
-
-<!-- Insert Image of the command and output -->
-
-Now let's do our nexc command. Type in `last`
 
 
 
-- File System
+Read about [Knowing your server](./KnowYourServer.md)
 
-- Networking
 
-- Process Management
-
-- Service Management 
-
-- Utilities
+## ToDo
+- [ ] File System
+- [ ] Networking
+- [ ] Process Management
+- [ ] Service Management 
+- [ ]Utilities
   - Search - find, grep
   - Text Manipulation: awk, cut, sed 
   - Network: ping, telnet, dig, curl, wget
+
+
+
+
+
