@@ -19,11 +19,36 @@ When you open a terminal session on your local machine (running Linux or Windows
 
 ![alt text](../.resources/prompt.png)
 
+THe prompt generally gives you three pieces of info. On most systems the prompt is of the below format: 
 
+```bash
+<username>@<hostname>:<current_directory> >
+```
+In the above pic, the username is `kiran` and the hostname (name of the computer) is `web-server-01` and the current directory is `~`
 
+> ~ is representation of the Home directory of the user which is generally /home/<username>
+
+When a user changes the directory, the prompt also changes. For instance if the user changes into /etc, the prompt looks like this : `kiran@web-server-01:/etc>`.
+Notice the part after the colon, it says `/etc`
+
+### Which Operating System are you logged in to ?
+
+Let's say you are given access to a system and you are able to login to the machine without any other info (Metadata) of the machine. How do you know which operating system you are logged in? yes, Linux, but what is the distribution you loggedd in.
+
+The easiest way to know that is with the command 
+
+```bash
+cat /etc/*se
+```
+
+![OS Info](../.resources/os-info.png)
+
+> Every distribution has a file under /etc directory with the name os-release or release hence the wild card `*se`, you don't have to know the name of the directory.
 
 ## Navigation 
 
 ```bash
 pwd
 ```
+
+
