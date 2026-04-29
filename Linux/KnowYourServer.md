@@ -10,7 +10,6 @@ When you want to "login" to a server running Linux Operating system (henceforth 
 
 <!-- Insert Image of the command and output -->
 
-Now let's do our nexc command. Type in `last`
 
 
 
@@ -38,12 +37,79 @@ Let's say you are given access to a system and you are able to login to the mach
 The easiest way to know that is with the command 
 
 ```bash
-cat /etc/*se
+cat /etc/*-release 
 ```
 
 ![OS Info](../.resources/os-info.png)
 
-> Every distribution has a file under /etc directory with the name os-release or release hence the wild card `*se`, you don't have to know the name of the directory.
+This command works because there is generally file called as `os-release` or just release under the directory /etc.
+
+
+`hostnamectl` also gives the details of the distribution and Kernel version. 
+`lsb_release -a` also gives you the distribution name.
+
+Another important command to know how long your system has been running and what is the CPU usage is
+`uptime`
+
+uptime gives you the output in the below foemat:
+
+```
+current_system_time up <time-since-the-system-started> <no.of users connected> load average: <> <> <>
+```
+
+Example
+![alt text](../.resources/uptime.png)
+
+In the eabove example, the current time of the system is `21:43:42`. System was last booted 13 minutes ago and 1 user is connected to the system.
+and the Load average .  
+
+Load average is the amount of load the CPU has taken in last 1 minute, 5 minutes and 15 minutes.
+
+In the above example the part `load average: 1.45, 1.49, 1.07` tells us the load average in the last 1 minute is 1.45 and last 5 minutes is 1.49 and 15 minutes is 1.09.
+
+What do we infer from these numbers? These numbers can only be understood if you know number of CPUs. 
+The easiest way to know the number of CPUs is using the command `lscpu` which shows the total number of CPUs. If 
+
+the output of `lscpu` looks as below, which gives us the no of CPUs as 12
+
+```base
+Architecture:                x86_64
+  CPU op-mode(s):            32-bit, 64-bit
+  Address sizes:             39 bits physical, 48 bits virtual
+  Byte Order:                Little Endian
+CPU(s):                      12
+  On-line CPU(s) list:       0-11
+Vendor ID:                   GenuineIntel
+  Model name:                12th Gen Intel(R) Core(TM) i7-1255U
+    CPU family:              6
+    Model:                   154
+    Thread(s) per core:      2
+    Core(s) per socket:      10
+    Socket(s):               1
+    Stepping:                4
+    CPU(s) scaling MHz:      26%
+```
+
+The load average is calculated based on the number of processes in two states:
+    Running (R): Processes currently using the CPU.
+    Uninterruptible sleep (D): Processes waiting for I/O operations to complete.
+A load average of 1.0 on a machine with 1 Core means the CPU is at 100% utilization but the same load on a 2 Core system means that there is only 50% utilization of CPUs.
+In our example 1.45 on a 12-core means a lot of CPU is free.
+
+To check the system health top is another great utility.
+
+How do we check the memory available and memory utilized. The easiest way is to use the command `free -h`
+
+
+```bash
+free -h
+               total        used        free      shared  buff/cache   available
+Mem:            38Gi       8.2Gi        26Gi       1.6Gi       6.2Gi        30Gi
+Swap:           74Gi          0B        74Gi
+```
+
+
+
 
 ## Navigation 
 
