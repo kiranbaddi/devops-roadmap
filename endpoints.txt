@@ -1,0 +1,8 @@
+google: https://google.com
+wikipedia: https://wikipedia.org
+random: https://randome.web
+australia: https://australia.com
+bbc: https://bbc.co.uk
+random2: https://random2.org
+wisely: https://wisely.com
+github: https://github.com
